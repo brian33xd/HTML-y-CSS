@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño Responsive con CSS</title>
+    <link rel="stylesheet" href="DiseñoResponsive.css">
+    <style>.conteiner-1 {
+
+        display: flex;
+        justify-content: flex-end;
+        gap: 2px;
+        font-size: 0.75rem;
+    }
+    
+    .item {
+        border: solid 1px gray;
+        border-radius: 5px;
+    }
+    .item-1 {
+        background-color: violet
+    }
+    .item-2 {
+        background-color: red
+    }
+    .item-3 {
+        background-color: gray;
+    }
+    
+    .container-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    
+    @media(max-width: 640px) {
+        .container-2{
+            display: flex;
+            flex-direction: row;
+    
+    
+        }
+    
+    }
+    </style>
+<body>
+    <div class="conteiner-1">
+        <div class="item item-1">Esta es la sección principal</div>
+        <div class="item item-2">Menú</div>
+        <div class="item item-3">Opciones</div>   
+    </div>
+
+    <div class="container-2"> 
+    <div class="item item-4">Clases</div>
+    <div class="item item-5">Diseños</div>
+    <div class="item item-6">Imagenes</div>
+</div> 
+</body>
+</html>
